@@ -18,3 +18,7 @@ spring:
           uri: lb://ms-register-product-client
           predicates:
             - Path=/api/register/**
+        - id: ms-clients
+          uri: lb://ms-clients
+          predicates:
+            - Path=/api/client/**
